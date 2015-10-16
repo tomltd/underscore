@@ -9,23 +9,12 @@
 <body>
 
   <script>
-  "use strict";
+    "use strict";
 
-  var items = [2, "", true, false, 0, null, "some test", undefined, NaN];
+    var colors = ['red','blue','green','yellow','black','red'];
 
-  // falsy value
-  // false
-  // 0
-  // ""
-  // null
-  // undefined
-  // NaN
+    console.log(_.without(colors, 'red','green'));
 
-  //console.log(_.compact(items));
-
-  var items2 = [["a","b","c"],[[1,2,3],[true,false]]];
-
-  console.log(_.flatten(items2));
   </script>
 
 </body>
