@@ -11,11 +11,17 @@
   <script>
   "use strict";
 
-  var colors = ["red","blue","yellow","white","black"]
+  var items = [2, "", true, false, 0, null, "some test", undefined, NaN];
 
-  var item = _.first(colors, 3);
+  // falsy value
+  // false
+  // 0
+  // ""
+  // null
+  // undefined
+  // NaN
 
-  console.log(item);
+  console.log(_.compact(items));
 
 
   </script>
